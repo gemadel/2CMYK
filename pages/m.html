@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>M</title>
+        <style>
+            *{
+                padding: 0;
+                margin: 0;
+            }
+            @font-face{
+                font-family:"Oswald";
+                src:url("../fonts/oswald/Oswald-Bold-Cut.svg");
+                src:url("../fonts/oswald/Oswald-Bold-Cut.eot");
+                src:url("../fonts/oswald/Oswald-Bold-Cut.ttf");
+                src:url("../fonts/oswald/Oswald-Bold-Cut.woff");
+            }
+            img{
+                width: 100%;
+                height: auto;
+            }
+            p{
+                font-family:"Oswald";
+                background-color: magenta;
+                position: fixed;
+            }
+            img ~ a>p{
+                top: 10px;
+                left: 10px;
+            }
+            a[alt="y"] p{
+                font-family:"Oswald";
+                background-color: magenta;
+                width: 80px;
+                height: 20px;
+                top: 90%;
+                left: 90%;
+                bottom: 10px;
+                right: 10px;
+            }
+            a>p{
+                position:fixed
+            }
+            a[titel="cmyk"] p{
+                bottom: 10px;
+                right: 10ps;
+            }
+            a[titel="y"] p{
+                bottom: 10px;
+                right: 10ps;
+            }
+            
+            a[alt="c"] p{
+                font-family:"Oswald";
+                background-color: magenta;
+                width: 80px;
+                height: 20px;
+                top: 90%;
+                left: 2%;
+                bottom: 10px;
+                right: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <img src="/img/m.jpg">
+        <a title="cmyk" href="/index.html"><p>cmyk</p></a>
+        <a title="y" href="y.html" alt="y"><p>y</p></a>
+        <a title="c" href="c.html" alt="c"><p>c</p></a>
+    </body>
+</html>
